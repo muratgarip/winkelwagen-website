@@ -1,3 +1,4 @@
+
 const inputFieldEl=document.getElementById("input-field");
 const addButtonEl=document.getElementById("add-button");
 const boodschappenlijstEl=document.getElementById("boodschappenlijst");
@@ -15,10 +16,18 @@ addButtonEl.addEventListener("click",function(){
   
   clearBoodschappenlijst();
   displayBoodschappenlijst();
+  playAudio();
 });
 
 clearBoodschappenlijst();
 displayBoodschappenlijst();
+playAudio();
+
+function playAudio(){
+  let audio = new Audio("audio.mp3");
+  audio.play();
+}
+
 
 function clearInputFieldEl(){
   inputFieldEl.value="";
@@ -46,3 +55,4 @@ function displayBoodschappenlijst(){
     boodschappenlijstEl.innerHTML = "<p>Er is geen winkelwaar</p>";
   }
 }
+
