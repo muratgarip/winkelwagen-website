@@ -16,7 +16,7 @@ addButtonEl.addEventListener("click",function(){
   
   clearBoodschappenlijst();
   displayBoodschappenlijst();
-  playAudio();
+  //playAudio();
 });
 
 clearBoodschappenlijst();
