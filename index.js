@@ -21,7 +21,7 @@ addButtonEl.addEventListener("click",function(){
 
 clearBoodschappenlijst();
 displayBoodschappenlijst();
-playAudio();
+//playAudio();
 
 function playAudio(){
   let audio = new Audio("audio.mp3");
